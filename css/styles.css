@@ -1,0 +1,17 @@
+/*
+    Aden Hirdes
+    #8829990
+    ahirdes9990@conestogac.on.ca
+*/
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font: normal, normal, normal, 12px/1.5, Verdana, Arial, Helvetica;
+    background-color: hsla(270, 10%, 50%, 1.0);
+}
+
+#linkHeader {
+    color: #acb;
+    font-size: 2rem;
+}
