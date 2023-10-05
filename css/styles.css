@@ -15,3 +15,52 @@ body {
     color: #acb;
     font-size: 2rem;
 }
+
+main {
+    float: left;
+    height: 30vw;
+    width: 65vw;
+    background-color: hsl(250, 50%, 30%);
+}
+
+aside {
+    float: right;
+    height: 30vw;
+    width: 25vw;
+    background-color: hsl(150, 42%, 43%)
+}
+
+footer {
+    clear: both;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.structural {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#para1 {
+    color: rgb(94, 156, 227)
+}
+
+#para2 {
+    color: rgb(150, 100, 50)
+}
+#para3 { 
+    color: rgb(0, 200, 100);
+}
+
+header {
+    background-color: hsl(123, 28%, 32%);
+}
+
+a:hover {
+    color: #f00;
+}
+
+footer p {
+    font-size: .75em;
+    color: white;
+}
