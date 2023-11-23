@@ -4,11 +4,16 @@
     ahirdes9990@conestogac.on.ca
 */
 
+html {
+    font: normal, normal, normal, 20px/1.5, Verdana, Arial, Helvetica;
+}
+
 body {
     height: 100vh;
     width: 100vw;
-    font: normal, normal, normal, 12px/1.5, Verdana, Arial, Helvetica;
     background-color: hsla(270, 10%, 50%, 1.0);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -18,31 +23,30 @@ body {
 }
 
 main {
-    float: left;
-    width: 65vw;
+    flex: 2 1 70%;
     background-color: hsl(250, 50%, 30%);
 }
 
 aside {
-    float: right;
-    width: 25vw;
+    flex: 1 2 30%;
     background-color: hsl(150, 42%, 43%)
 }
 
 footer {
-    clear: both;
+    flex: 1 5%;
     background-color: hsl(0, 0%, 0%);
 }
 
 .structural {
-    margin: 10px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
     border: 2px solid black;
 }
 
 h1 {
     color: maroon;
-    font-size: 48px;
+    font-size: 2.5rem;
+    flex: 1 10%;
 }
 
 #para1 {
@@ -60,6 +64,10 @@ header {
     background-color: hsl(123, 28%, 32%);
 }
 
+nav {
+    flex: 1 5%;
+}
+
 nav ul li {
     display:inline;
     list-style-type: none;
@@ -68,7 +76,7 @@ nav ul li {
 nav ul li a {
     background-color: cornsilk;
     color: indigo;
-    padding: 4px;
+    padding: 1em;
     border: 2px solid indigo;
 }
 
@@ -127,3 +135,42 @@ footer p {
     color: white;
 }
 
+section {
+    display: flex;
+    flex-direction: row;
+    flex: 4 8%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+figure {
+    border: 0.5rem solid black;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+    #gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
